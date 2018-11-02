@@ -8,8 +8,9 @@
 		"stage": "react-static build --staging",
 		"build": "react-static build",
 		"serve": "serve dist -p 3000",
-		"lint": "./node_modules/.bin/eslint public",
-		"test": "echo \"No tests\""
+		"lint": "./node_modules/.bin/eslint public src",
+		"test": "echo \"No tests\"",
+		"format": "./node_modules/.bin/prettier --write \"src/**/*.{js,jsx}\""
 	},
 	"dependencies": {
 		"apollo-cache-inmemory": "^1.0.0",

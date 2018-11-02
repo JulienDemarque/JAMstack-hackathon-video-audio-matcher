@@ -6,7 +6,7 @@ cache:
   directories:
     - node_modules
 sudo: false
-install: npm run install
+install: npm install
 script:
-  - npm run lint
   - npm run build
+  - npm run lint
