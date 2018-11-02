@@ -1,0 +1,33 @@
+{
+  "name": "react-static-example-apollo-redux",
+  "version": "1.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "react-static start",
+    "stage": "react-static build --staging",
+    "build": "react-static build",
+    "serve": "serve dist -p 3000"
+  },
+  "dependencies": {
+    "apollo-cache-inmemory": "^1.0.0",
+    "apollo-client": "^2.0.1",
+    "apollo-link-http": "^1.1.0",
+    "axios": "^0.16.2",
+    "graphql": "^0.11.7",
+    "graphql-tag": "^2.5.0",
+    "json-loader": "^0.5.7",
+    "react": "^16.0.0",
+    "react-apollo": "^2.0.0",
+    "react-dom": "^16.0.0",
+    "react-router": "^4.2.0",
+    "react-static": "^5.9.12"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-config-react-tools": "1.x.x",
+    "eslint-plugin-prettier": "^3.0.0",
+    "prettier": "^1.14.3",
+    "serve": "^6.1.0"
+  }
+}
