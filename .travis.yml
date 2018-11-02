@@ -1,10 +1,12 @@
 language: node_js
 node_js:
-  - "8"
+  - '8'
 before_install: if [[ `npm -v` != 5* ]]; then npm i -g npm@5; fi
 cache:
   directories:
     - node_modules
 sudo: false
-install: npm run build
-script: npm run lint
+install: npm run install
+script:
+  - npm run lint
+  - npm run build

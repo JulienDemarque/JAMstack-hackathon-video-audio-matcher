@@ -3,5 +3,13 @@
 	"singleQuote": true,
 	"trailingComma": "es5",
 	"useTabs": true,
-	"tabWidth": 2
+	"tabWidth": 2,
+	"overrides": [
+		{
+			"files": ".babelrc",
+			"options": {
+				"parser": "json"
+			}
+		}
+	]
 }
