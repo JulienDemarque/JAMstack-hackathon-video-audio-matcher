@@ -14,10 +14,6 @@ export default {
 				component: 'src/containers/Home',
 			},
 			{
-				path: '/about',
-				component: 'src/containers/About',
-			},
-			{
 				path: '/test',
 				component: 'src/containers/Test',
 			},
