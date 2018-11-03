@@ -21,6 +21,7 @@ class Input extends React.Component {
 	handleSubmit(e) {
 		e.preventDefault();
 		let url = this.state.input;
+		this.props.updateVideoUrl(url);
 		this.recognitionWithClarifai(url);
 		this.setState({ input: '' });
 		//displayVideo(url);
