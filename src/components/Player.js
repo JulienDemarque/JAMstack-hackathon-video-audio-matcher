@@ -3,8 +3,6 @@ import React from 'react';
 class Player extends React.Component {
 	constructor(props) {
 		super(props);
-		this.audioSrc = this.props.audio;
-		this.videoSrc = this.props.video;
 	}
 	componentDidMount() {
 		let audio = document.getElementById('audio-element');
@@ -24,6 +22,14 @@ class Player extends React.Component {
 			timeStateChanged = true;
 		};
 	}
+
+	componentDidUpdate() {
+		let video = document.getElementById('video-element');
+		let audio = document.getElementById('audio-element');
+		video.load();
+		audio.load();
+	}
+
 	render() {
 		return (
 			<div>
@@ -35,9 +41,9 @@ class Player extends React.Component {
 					width="480"
 					height="270"
 				>
-					<source src={this.videoSrc} type="video/mp4" />
+					<source src={this.props.video} type="video/mp4" />
 					<audio id="audio-element">
-						<source src={this.audioSrc} type="audio/mpeg" />
+						<source src={this.props.audio} type="audio/mpeg" />
 					</audio>
 				</video>
 			</div>

@@ -1,8 +1,9 @@
 import React from 'react';
 import { Query } from 'react-apollo';
+import SongList from './SongList';
 import gql from 'graphql-tag';
 
-const GetDataFromHasura = ({ keyword }) => {
+const GetDataFromHasura = ({ keyword, updateAudioUrl }) => {
 	const GET_PROFILE = gql`
 		{
 			audio(where: { genre: { _like: "%${keyword}%" } }) {
@@ -25,14 +26,12 @@ const GetDataFromHasura = ({ keyword }) => {
 				{({ loading, error, data }) => {
 					if (loading) return <p>Loading...</p>;
 					if (error) return <p>Error :(</p>;
-
-					console.log(data.audio[0]);
-					return data.audio[0].songs.map(({ title, url }) => (
-						<div key={title}>
-							<p>{`title: ${title}`}</p>
-							<p>{`url: ${url}`}</p>
-						</div>
-					));
+					return (
+						<SongList
+							updateAudioUrl={updateAudioUrl}
+							songs={data.audio[0].songs}
+						/>
+					);
 				}}
 			</Query>
 		</div>
