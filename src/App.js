@@ -1,25 +1,27 @@
 import React from 'react';
 import { Router, Link } from 'react-static';
 import { hot } from 'react-hot-loader';
-//
 import Routes from 'react-static-routes';
-//
+// Apollo Client
 import { ApolloProvider } from 'react-apollo';
 import client from './connectors/apollo';
-
+// Components
+import Header from './components/Header';
+// Styles
 import './app.css';
 
 const App = () => (
 	<ApolloProvider client={client}>
 		<Router>
 			<div>
-				<nav>
+				<Header />
+				{/* <nav>
 					<Link exact to="/">
 						Home
 					</Link>
 					<Link to="/blog">Blog</Link>
 					<Link to="/test">Test</Link>
-				</nav>
+				</nav> */}
 				<div className="content">
 					<Routes />
 				</div>
