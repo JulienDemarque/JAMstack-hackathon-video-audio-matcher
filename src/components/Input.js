@@ -97,7 +97,6 @@ class Input extends React.Component {
 			<div>
 				<form onSubmit={this.handleSubmit}>
 					<input
-						className="link-input"
 						type="text"
 						placeholder="put link to your video here"
 						value={this.state.input}

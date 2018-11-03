@@ -11,11 +11,13 @@ class Test extends React.Component {
 			searchGenre: '',
 			audioUrl: '',
 			videoUrl: '',
+			selectGenre: '',
 		};
 
 		this.upDateSearchGenre = this.upDateSearchGenre.bind(this);
 		this.updateVideoUrl = this.updateVideoUrl.bind(this);
 		this.updateAudioUrl = this.updateAudioUrl.bind(this);
+		this.handleSelectChange = this.handleSelectChange.bind(this);
 	}
 
 	upDateSearchGenre(genre) {
@@ -34,6 +36,10 @@ class Test extends React.Component {
 		this.setState({
 			audioUrl: url,
 		});
+	}
+
+	handleSelectChange(e) {
+		this.setState({ selectGenre: e.target.value });
 	}
 
 	render() {
@@ -56,14 +62,32 @@ class Test extends React.Component {
 					upDateSearchGenre={this.upDateSearchGenre}
 					updateVideoUrl={this.updateVideoUrl}
 				/>
-				<Player audio={this.state.audioUrl} video={this.state.videoUrl} />
+				{this.state.videoUrl && (
+					<Player audio={this.state.audioUrl} video={this.state.videoUrl} />
+				)}
 
 				{this.state.searchGenre ? (
 					<div>
-						<h3>Genre Match: {this.state.searchGenre}</h3>
+						<p>
+							Genre Match: <em>{this.state.searchGenre}</em>
+						</p>
+						<p>Or choose an other genre:</p>
+						<select
+							name="Genre"
+							value={this.state.selectGenre}
+							onChange={this.handleSelectChange}
+						>
+							<option value="" disabled selected>
+								Select your option
+							</option>
+							<option value="oriental">oriental</option>
+							<option value="jazz">jazz</option>
+							<option value="punk-rock">punk-rock</option>
+							<option value="ambient">ambient</option>
+						</select>
 						<GetDataFromHasura
 							updateAudioUrl={this.updateAudioUrl}
-							keyword={this.state.searchGenre}
+							keyword={this.state.selectGenre || this.state.searchGenre}
 						/>
 					</div>
 				) : (
