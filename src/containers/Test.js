@@ -31,7 +31,10 @@ class Test extends React.Component {
 					https://s3.us-east-2.amazonaws.com/freecodecamp-hackaton/videos-for-testing/traffic.mp4
 					<br />
 				</p>
-				<Player audio="https://s3.us-east-2.amazonaws.com/freecodecamp-hackaton/songs/oriental/light-in-babylon-belev-shalem.mp3" video="https://s3.us-east-2.amazonaws.com/freecodecamp-hackaton/videos-for-testing/Dunes1.mp4"/>
+				<Player
+					audio="https://s3.us-east-2.amazonaws.com/freecodecamp-hackaton/songs/oriental/light-in-babylon-belev-shalem.mp3"
+					video="https://s3.us-east-2.amazonaws.com/freecodecamp-hackaton/videos-for-testing/Dunes1.mp4"
+				/>
 				<Input upDateSearchGenre={this.upDateSearchGenre} />
 				{this.state.searchGenre ? (
 					<div>
