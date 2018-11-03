@@ -11,13 +11,14 @@ const SongList = ({ songs, updateAudioUrl }) => {
 			<p>Choose your song by clicking on it</p>
 			{songs.map(({ title, url }) => (
 				<SongListItem
-					url={url}
 					title={title}
 					onClick={() => handleOnClick(url)}
 					key={title}
 				>
-					<p>{`title: ${title}`}</p>
-					<p>{`url: ${url}`}</p>
+					<p>{`${title
+						.split('-')
+						.map(e => e[0].toUpperCase() + e.slice(1))
+						.join(' ')}`}</p>
 				</SongListItem>
 			))}
 		</div>
