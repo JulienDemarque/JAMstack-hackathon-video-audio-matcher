@@ -1,9 +1,10 @@
 import React from 'react';
 import { withRouteData, Link } from 'react-static';
+import { Layout } from '../styles/layout';
 //
 
 export default withRouteData(({ posts }) => (
-	<div>
+	<Layout>
 		<h1>It's blog time.</h1>
 		<br />
 		All Posts:
@@ -14,5 +15,5 @@ export default withRouteData(({ posts }) => (
 				</li>
 			))}
 		</ul>
-	</div>
+	</Layout>
 ));

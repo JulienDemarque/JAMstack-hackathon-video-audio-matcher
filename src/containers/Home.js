@@ -1,12 +1,12 @@
 import React from 'react';
 import { withSiteData } from 'react-static';
 import { Link } from 'react-static';
-import { Container } from '../styles/home';
+import { Layout } from '../styles/layout';
 //
 import logoImg from '../logo.png';
 
 export default withSiteData(() => (
-	<Container>
+	<Layout>
 		<h2>Welcome to Audio Video Matcher</h2>
 		<p>
 			This website allows you to quickly found suitable music for your video. It
@@ -14,5 +14,5 @@ export default withSiteData(() => (
 			musical genre to it. You can then play the song of your choice along your
 			video. Ready to get started? Follow the link: <Link to="/test">Test</Link>
 		</p>
-	</Container>
+	</Layout>
 ));
