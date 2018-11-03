@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const SongListItem = styled.div`
-	margin: 20px;
+	margin: 20px auto;
 	padding: 2px 10px;
 	text-align: center;
 	font-size: 1.2em;
