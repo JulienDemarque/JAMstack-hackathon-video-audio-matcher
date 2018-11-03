@@ -2,6 +2,7 @@ import React from 'react';
 import Input from '../components/Input';
 import Player from '../components/Player';
 import GetDataFromHasura from '../components/Query';
+import { Layout } from '../styles/layout';
 
 class Test extends React.Component {
 	constructor(props) {
@@ -37,7 +38,7 @@ class Test extends React.Component {
 
 	render() {
 		return (
-			<div>
+			<Layout>
 				<h1>Test page</h1>
 				<p>
 					Try with the following links:
@@ -68,7 +69,7 @@ class Test extends React.Component {
 				) : (
 					''
 				)}
-			</div>
+			</Layout>
 		);
 	}
 }
