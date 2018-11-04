@@ -6,7 +6,6 @@ import Routes from 'react-static-routes';
 //
 import { ApolloProvider } from 'react-apollo';
 import client from './connectors/apollo';
-
 import './app.css';
 
 const App = () => (
@@ -17,6 +16,7 @@ const App = () => (
 					<Link exact to="/">
 						Home
 					</Link>
+					<Link to="/createsong">Songs</Link>
 					<Link to="/test">Test</Link>
 				</nav>
 				<div className="content">
