@@ -28,9 +28,9 @@ $ npm run start
 
 ## Project Reference
 
-- [Our App][9] - Where our app is hosted
-- [Our Trello][10] - Project management
-- [Our Figma][11] - Basic UI mock-up
+- [Our App][1] - Where our app is hosted
+- [Our Trello][9] - Project management
+- [Our Figma][10] - Basic UI mock-up
 
 	## License
 
@@ -41,7 +41,7 @@ Copyright (c) 2018 Team Haptreyscorwix
 
 # }
 
-[1]: https://zealous-curran-ccefa0.netlify.com/test
+[1]: https://zealous-curran-ccefa0.netlify.com
 [2]: https://github.com/nozzle/react-static
 [3]: https://github.com/apollographql/react-apollo
 [4]: https://github.com/Clarifai/clarifai-javascript
@@ -49,6 +49,5 @@ Copyright (c) 2018 Team Haptreyscorwix
 [6]: https://github.com/styled-components/styled-components
 [7]: https://github.com/prettier/prettier
 [8]: https://travis-ci.org
-[9]: https://zealous-curran-ccefa0.netlify.com/test
-[10]: https://trello.com/b/IRt2kuYk/jamstack-hackathon-video-audio-matcher
-[11]: https://www.figma.com/file/U0WP1Bju8ZRfYtKaouYQ2LiF/UI?node-id=0%3A1
+[9]: https://trello.com/b/IRt2kuYk/jamstack-hackathon-video-audio-matcher
+[10]: https://www.figma.com/file/U0WP1Bju8ZRfYtKaouYQ2LiF/UI?node-id=0%3A1
