@@ -6,9 +6,8 @@ import fetch from 'node-fetch';
 const client = new ApolloClient({
 	link: new HttpLink({
 		fetch,
-		uri:
-			'https://jamstack-hackathon-video-audio.herokuapp.com/v1alpha1/graphql',
-		headers: { 'X-Hasura-Access-Key': 'mysecretkey' },
+		uri: 'https://hasuratest-wix.herokuapp.com/v1alpha1/graphql',
+		headers: { 'X-Hasura-Access-Key': 'ultimatesecretpassword' },
 	}),
 	cache: new InMemoryCache(),
 });
