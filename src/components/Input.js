@@ -1,5 +1,6 @@
 import React from 'react';
 import Clarifai from 'clarifai';
+import { InputBox, InputSubmit, InputContainer } from '../styles/input';
 import GenreToDescriptive from '../utils/genre-to-descriptive';
 
 const app = new Clarifai.App({
@@ -94,17 +95,17 @@ class Input extends React.Component {
 
 	render() {
 		return (
-			<div>
+			<InputContainer>
 				<form onSubmit={this.handleSubmit}>
-					<input
+					<InputBox
 						type="text"
 						placeholder="put link to your video here"
 						value={this.state.input}
 						onChange={this.handleChange}
 					/>
-					<input type="submit" value="Submit" />
+					<InputSubmit type="submit" value="Submit" />
 				</form>
-			</div>
+			</InputContainer>
 		);
 	}
 }

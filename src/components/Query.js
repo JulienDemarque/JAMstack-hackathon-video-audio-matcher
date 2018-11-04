@@ -1,6 +1,7 @@
 import React from 'react';
 import { Query } from 'react-apollo';
 import SongList from './SongList';
+import { SongContainer } from '../styles/songlist';
 import gql from 'graphql-tag';
 
 const GetDataFromHasura = ({ keyword, updateAudioUrl }) => {
@@ -20,8 +21,7 @@ const GetDataFromHasura = ({ keyword, updateAudioUrl }) => {
 	`;
 
 	return (
-		<div>
-			<h3>Results:</h3>
+		<SongContainer>
 			<Query query={GET_PROFILE}>
 				{({ loading, error, data }) => {
 					if (loading) return <p>Loading...</p>;
@@ -34,7 +34,7 @@ const GetDataFromHasura = ({ keyword, updateAudioUrl }) => {
 					);
 				}}
 			</Query>
-		</div>
+		</SongContainer>
 	);
 };
 
