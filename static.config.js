@@ -18,6 +18,10 @@ export default {
 				component: 'src/containers/Test',
 			},
 			{
+				path: '/createsong',
+				component: 'src/containers/CreateSong',
+			},
+			{
 				path: '/blog',
 				component: 'src/containers/Blog',
 				getData: () => ({
