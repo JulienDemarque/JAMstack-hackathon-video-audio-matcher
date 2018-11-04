@@ -8,10 +8,14 @@ import logoImg from '../logo.png';
 export default withSiteData(() => (
 	<Layout>
 		<h1>Welcome to Audio Video Matcher</h1>
+		<h3>
+			<strong>
+				Are you looking for the perfect song to fit to your video?{' '}
+			</strong>
+		</h3>
 		<p>
-			Are you looking for the perfect song to fit to your video? This website
-			allows you to quickly found suitable music for your video. You can then
-			play the song of your choice along your video.
+			This website allows you to quickly found suitable music for your video.
+			You can then play the song of your choice along your video.
 			<br />
 			<br />
 			How does it work? It is using image recognition on your video to determine
