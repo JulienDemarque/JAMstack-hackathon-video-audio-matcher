@@ -35,7 +35,8 @@ $ npm run start
 
 ## License
 
-TODO
+The MIT License (MIT)
+Copyright (c) 2018 Team Haptreyscorwix
 > :fork_and_knife: Fork away!
 
 # }
