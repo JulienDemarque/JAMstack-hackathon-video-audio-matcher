@@ -17,7 +17,7 @@ const App = () => (
 					<Link exact to="/">
 						Home
 					</Link>
-					<Link to="/test">Test</Link>
+					<Link to="/match">Match</Link>
 				</nav>
 				<div className="content">
 					<Routes />

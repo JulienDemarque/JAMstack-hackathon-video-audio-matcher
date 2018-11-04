@@ -13,8 +13,8 @@ export default {
 				component: 'src/containers/Home',
 			},
 			{
-				path: '/test',
-				component: 'src/containers/Test',
+				path: '/match',
+				component: 'src/containers/Match',
 			},
 			{
 				is404: true,

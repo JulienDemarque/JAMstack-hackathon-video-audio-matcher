@@ -11,7 +11,7 @@ import {
 	VideoAndInputContainer,
 } from '../styles/layout';
 
-class Test extends React.Component {
+class Match extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -52,12 +52,15 @@ class Test extends React.Component {
 	render() {
 		return (
 			<Layout>
-				<h1>Test page</h1>
+				<h1>Find a Match!!</h1>
 				<VideoAndInputContainer>
 					<Instructions>
+						Submit a url finishing with .mp4, Wait till it loads, choose a song,
+						play the video! <br />
 						Don't have your video online yet? try with the following links for
 						demo:
 					</Instructions>
+
 					<UrlContainer>
 						<p>
 							<br />
@@ -105,6 +108,8 @@ class Test extends React.Component {
 							keyword={this.state.selectGenre || this.state.searchGenre}
 						/>
 					</ResultContainer>
+				) : this.state.videoUrl ? (
+					<p>Loading...</p>
 				) : (
 					''
 				)}
@@ -113,4 +118,4 @@ class Test extends React.Component {
 	}
 }
 
-export default Test;
+export default Match;
