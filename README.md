@@ -1,4 +1,4 @@
-# video-audio-matcher [![Build Status](https://travis-ci.org/JulienDemarque/JAMstack-hackathon-video-audio-matcher.svg?branch=master)](https://travis-ci.org/JulienDemarque/JAMstack-hackathon-video-audio-matcher) {
+# video-audio-matcher [![Build Status](https://travis-ci.com/JulienDemarque/JAMstack-hackathon-video-audio-matcher.svg?branch=master)](https://travis-ci.com/JulienDemarque/JAMstack-hackathon-video-audio-matcher) {
 
 Greetings from Team Haptreyscorwix, and welcome to video-audio-matcher.
 This app allows you to quickly found suitable music for your video. It is using AI image recognition on your video to determine a best fitting musical genre to it. You can then play the song of your choice along your video. Ready to [get started][1]?.
@@ -8,7 +8,6 @@ This app allows you to quickly found suitable music for your video. It is using 
 ```
 $ npm install
 $ npm run build
-$ npm run lint
 ```
 
 ## Start
@@ -19,23 +18,24 @@ $ npm run start
 
 ## Related
 
- - [React Static][2] - Framework for the project
- - [React Apollo][3] - React integration for Apollo Client
- - [Clarifai][4] - AI platform
- - [Hasura][5] - GraphQL Engine
- - [styled-components][6] - Stylizing React components
- - [Prettier][7] - Linting and formatting
- - [Travis CI][8] - Linting and formatting
+- [React Static][2] - Framework for the project
+- [React Apollo][3] - React integration for Apollo Client
+- [Clarifai][4] - AI platform
+- [Hasura][5] - GraphQL Engine
+- [styled-components][6] - Stylizing React components
+- [Prettier][7] - Linting and formatting
+- [Travis CI][8] - Linting and formatting
 
 ## Project Reference
 
- - [Our App][9] - Where our app is hosted
- - [Our Trello][10] - Project management
- - [Our Figma][11] - Basic UI mock-up
+- [Our App][9] - Where our app is hosted
+- [Our Trello][10] - Project management
+- [Our Figma][11] - Basic UI mock-up
 
 ## License
 
 TODO
+
 > :fork_and_knife: Fork away!
 
 # }
