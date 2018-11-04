@@ -7,23 +7,26 @@ const SongList = ({ songs, updateAudioUrl }) => {
 	}
 
 	return (
-		<div>
-			<p>Choose your song by clicking on it</p>
-			{songs.map(({ title, url, artist }) => (
-				<SongListItem
-					title={title}
-					onClick={() => handleOnClick(url)}
-					key={title}
-				>
-					<p>{`${title
-						.split('-')
-						.map(e => e[0].toUpperCase() + e.slice(1))
-						.join(' ')} - ${artist
-						.split('-')
-						.map(e => e[0].toUpperCase() + e.slice(1))
-						.join(' ')}`}</p>
-				</SongListItem>
-			))}
+		<div className="card">
+			<div className="card-body">
+				<p>Choose your song by clicking on it</p>
+				{songs.map(({ title, url, artist }) => (
+					<button
+						className="btn btn-outline-primary btn-block"
+						title={title}
+						onClick={() => handleOnClick(url)}
+						key={title}
+					>
+						<p className="my-1">{`${title
+							.split('-')
+							.map(e => e[0].toUpperCase() + e.slice(1))
+							.join(' ')} - ${artist
+							.split('-')
+							.map(e => e[0].toUpperCase() + e.slice(1))
+							.join(' ')}`}</p>
+					</button>
+				))}
+			</div>
 		</div>
 	);
 };

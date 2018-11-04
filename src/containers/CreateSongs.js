@@ -54,7 +54,7 @@ class CreateSongs extends Component {
 		const { title, artist, url, genre_id } = this.state;
 		return (
 			<div className="row mt-4">
-				<div className="col-6 mx-auto">
+				<div className="col-md-6 mx-auto">
 					<h1>Register your songs here!</h1>
 					<form>
 						<div className="form-group">
@@ -130,7 +130,10 @@ class CreateSongs extends Component {
 							{(postMutation, { error }) => {
 								console.log(error);
 								return (
-									<button className="btn btn-primary" onClick={postMutation}>
+									<button
+										className="btn btn-primary mb-4"
+										onClick={postMutation}
+									>
 										Submit
 									</button>
 								);

@@ -21,7 +21,7 @@ const GetDataFromHasura = ({ keyword, updateAudioUrl }) => {
 	`;
 
 	return (
-		<SongContainer>
+		<div className="col-md-6 my-1">
 			<Query query={GET_PROFILE}>
 				{({ loading, error, data }) => {
 					if (loading) return <p>Loading...</p>;
@@ -34,7 +34,7 @@ const GetDataFromHasura = ({ keyword, updateAudioUrl }) => {
 					);
 				}}
 			</Query>
-		</SongContainer>
+		</div>
 	);
 };
 

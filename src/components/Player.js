@@ -34,7 +34,8 @@ class Player extends React.Component {
 	render() {
 		return (
 			<div>
-				<Video
+				<video
+					className="video rounded"
 					id="video-element"
 					controls
 					muted
@@ -44,7 +45,7 @@ class Player extends React.Component {
 					<audio id="audio-element">
 						<source src={this.props.audio} type="audio/mpeg" />
 					</audio>
-				</Video>
+				</video>
 			</div>
 		);
 	}

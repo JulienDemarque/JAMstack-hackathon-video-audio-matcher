@@ -95,17 +95,25 @@ class Input extends React.Component {
 
 	render() {
 		return (
-			<InputContainer>
-				<form onSubmit={this.handleSubmit}>
-					<InputBox
-						type="text"
-						placeholder="put link to your video here"
-						value={this.state.input}
-						onChange={this.handleChange}
-					/>
-					<InputSubmit type="submit" value="Submit" />
-				</form>
-			</InputContainer>
+			<form
+				className="form-inline my-4 d-flex justify-content-center"
+				onSubmit={this.handleSubmit}
+			>
+				<input
+					className="form-control my-1 match-input"
+					type="text"
+					placeholder="Put link to your video here"
+					value={this.state.input}
+					onChange={this.handleChange}
+				/>
+				<button
+					className="btn btn-primary ml-2 my-1"
+					type="submit"
+					value="Submit"
+				>
+					Submit
+				</button>
+			</form>
 		);
 	}
 }
