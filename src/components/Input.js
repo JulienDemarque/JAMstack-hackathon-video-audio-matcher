@@ -4,7 +4,7 @@ import { InputBox, InputSubmit, InputContainer } from '../styles/input';
 import GenreToDescriptive from '../utils/genre-to-descriptive';
 
 const app = new Clarifai.App({
-	apiKey: '85c245c94f054d909333a497016a9a92',
+	apiKey: '59d457c935504c1bbf35b5f98b3360b9',
 });
 
 class Input extends React.Component {
