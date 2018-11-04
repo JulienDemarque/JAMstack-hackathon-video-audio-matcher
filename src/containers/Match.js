@@ -56,25 +56,25 @@ class Match extends React.Component {
 				<div className="col">
 					<h1 className="text-center display-4 mt-4">Find a Match!!</h1>
 
-					<div class="card text-center">
-						<div class="card-body">
-							<ul class="list-group">
+					<div className="card text-center">
+						<div className="card-body">
+							<ul className="list-group">
 								<p className="font-weight-bold">
 									Submit a url finishing with .mp4, Wait till it loads, choose a
 									song, play the video! <br />
 									Don't have your video online yet? try with the following links
 									for demo:
 								</p>
-								<li class="list-group-item">
+								<li className="list-group-item">
 									https://s3.us-east-2.amazonaws.com/freecodecamp-hackaton/videos-for-testing/Dunes1.mp4
 								</li>
-								<li class="list-group-item">
+								<li className="list-group-item">
 									https://s3.us-east-2.amazonaws.com/freecodecamp-hackaton/videos-for-testing/Istanbul.mp4
 								</li>
-								<li class="list-group-item">
+								<li className="list-group-item">
 									https://s3.us-east-2.amazonaws.com/freecodecamp-hackaton/videos-for-testing/coffe.mp4
 								</li>
-								<li class="list-group-item">
+								<li className="list-group-item">
 									https://s3.us-east-2.amazonaws.com/freecodecamp-hackaton/videos-for-testing/traffic.mp4
 								</li>
 							</ul>

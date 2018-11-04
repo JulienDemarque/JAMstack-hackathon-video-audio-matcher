@@ -6,12 +6,12 @@ import { Layout } from '../styles/layout';
 import logoImg from '../logo.png';
 
 export default withSiteData(() => (
-	<div class="jumbotron text-center mt-3">
-		<h1 class="display-4">Welcome to Audio Video Matcher</h1>
-		<p class="lead">
+	<div className="jumbotron text-center mt-3">
+		<h1 className="display-4">Welcome to Audio Video Matcher</h1>
+		<p className="lead">
 			Are you looking for the perfect song to fit to your video?{' '}
 		</p>
-		<hr class="my-4" />
+		<hr className="my-4" />
 		<p className="px-4">
 			This website allows you to quickly found suitable music for your video.
 			You can then play the song of your choice along your video.
@@ -24,7 +24,7 @@ export default withSiteData(() => (
 			<br />
 			Ready to get started? Follow the link:
 		</p>
-		<Link class="btn btn-primary btn-lg" to="/match">
+		<Link className="btn btn-primary btn-lg" to="/match">
 			Match
 		</Link>
 	</div>
