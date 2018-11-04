@@ -32,10 +32,11 @@ $ npm run start
 - [Our Trello][10] - Project management
 - [Our Figma][11] - Basic UI mock-up
 
-## License
+	## License
 
-TODO
 
+The MIT License (MIT)
+Copyright (c) 2018 Team Haptreyscorwix
 > :fork_and_knife: Fork away!
 
 # }
