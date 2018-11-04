@@ -16,7 +16,7 @@ const App = () => (
 					<Link exact to="/">
 						Home
 					</Link>
-					<Link to="/createsong">Songs</Link>
+					<Link to="/createsong">Register Songs</Link>
 					<Link to="/test">Test</Link>
 				</nav>
 				<div className="content">
