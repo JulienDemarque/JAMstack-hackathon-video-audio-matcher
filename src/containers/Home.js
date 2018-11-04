@@ -8,11 +8,22 @@ import logoImg from '../logo.png';
 export default withSiteData(() => (
 	<Layout>
 		<h1>Welcome to Audio Video Matcher</h1>
+		<h3>
+			<strong>
+				Are you looking for the perfect song to fit to your video?{' '}
+			</strong>
+		</h3>
 		<p>
-			This website allows you to quickly found suitable music for your video. It
-			is using image recognition on your video to determine a best fitting
-			musical genre to it. You can then play the song of your choice along your
-			video. Ready to get started? Follow the link: <Link to="/test">Test</Link>
+			This website allows you to quickly found suitable music for your video.
+			You can then play the song of your choice along your video.
+			<br />
+			<br />
+			How does it work? It is using image recognition on your video to determine
+			a best fitting musical genre to it. For exemple if your video has trees
+			and campfire it will likely match to folk music!
+			<br />
+			<br />
+			Ready to get started? Follow the link: <Link to="/match">Match</Link>
 		</p>
 	</Layout>
 ));
