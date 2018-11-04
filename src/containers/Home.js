@@ -7,7 +7,7 @@ import logoImg from '../logo.png';
 
 export default withSiteData(() => (
 	<Layout>
-		<h2>Welcome to Audio Video Matcher</h2>
+		<h1>Welcome to Audio Video Matcher</h1>
 		<p>
 			This website allows you to quickly found suitable music for your video. It
 			is using image recognition on your video to determine a best fitting

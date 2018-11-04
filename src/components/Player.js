@@ -1,4 +1,5 @@
 import React from 'react';
+import { Video } from '../styles/player';
 
 class Player extends React.Component {
 	constructor(props) {
@@ -33,19 +34,17 @@ class Player extends React.Component {
 	render() {
 		return (
 			<div>
-				<video
+				<Video
 					id="video-element"
 					controls
 					muted
 					controlsList="nodownload nofullscreen noremoteplayback"
-					width="480"
-					height="270"
 				>
 					<source src={this.props.video} type="video/mp4" />
 					<audio id="audio-element">
 						<source src={this.props.audio} type="audio/mpeg" />
 					</audio>
-				</video>
+				</Video>
 			</div>
 		);
 	}
