@@ -7,9 +7,9 @@ import gql from 'graphql-tag';
 const GetDataFromHasura = ({ keyword, updateAudioUrl }) => {
 	const GET_PROFILE = gql`
 		{
-			audio(where: { genre: { _like: "%${keyword}%" } }) {
-				genre
+			music_genre(where: { name: { _like: "%${keyword}%" } }) {
 				id
+				name
 				songs {
 					id
 					title
@@ -29,7 +29,7 @@ const GetDataFromHasura = ({ keyword, updateAudioUrl }) => {
 					return (
 						<SongList
 							updateAudioUrl={updateAudioUrl}
-							songs={data.audio[0].songs}
+							songs={data.music_genre[0].songs}
 						/>
 					);
 				}}
