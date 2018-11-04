@@ -18,7 +18,7 @@ export default {
 			},
 			{
 				path: '/createsong',
-				component: 'src/containers/CreateSong',
+				component: 'src/containers/CreateSongs',
 			},
 			{
 				is404: true,
