@@ -1,3 +1,5 @@
+console.log('Hasura env password: ', process.env.HASURA_PASSWORD);
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 

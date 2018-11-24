@@ -7,7 +7,7 @@ const client = new ApolloClient({
 	link: new HttpLink({
 		fetch,
 		uri: 'https://hasuratest-wix.herokuapp.com/v1alpha1/graphql',
-		headers: { 'X-Hasura-Access-Key': 'ultimatesecretpassword' },
+		headers: { 'X-Hasura-Access-Key': process.env.HASURA_PASSWORD },
 	}),
 	cache: new InMemoryCache(),
 });

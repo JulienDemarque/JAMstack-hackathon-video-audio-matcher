@@ -115,10 +115,10 @@ class CreateSongs extends Component {
 								value={url}
 								onChange={e => this.setState({ url: e.target.value })}
 								type="text"
-								placeholder="www.mymusicstorage.com/mysong.mp4"
+								placeholder="www.mymusicstorage.com/mysong.mp3"
 							/>
 							<small id="urlHelp" className="form-text text-muted">
-								Please submit a url pointing to your music. Ending muss be a
+								Please submit a url pointing to your music. Ending must be a
 								valid music format
 							</small>
 						</div>

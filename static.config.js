@@ -1,6 +1,9 @@
 import axios from 'axios';
 import React, { Component } from 'react';
 import { ServerStyleSheet } from 'styled-components';
+//require dotenv
+import dotenv from 'dotenv';
+dotenv.config();
 
 export default {
 	getSiteData: () => ({
@@ -78,20 +81,21 @@ export default {
 			);
 		}
 	},
-	// webpack: (config, { defaultLoaders }) => {
-	//   config.module.rules = [
-	//     {
-	//       oneOf: [
-	//         {
-	//           test: /\.json$/,
-	//           use: [{ loader: 'json-loader' }],
-	//         },
-	//         defaultLoaders.jsLoader,
-	//         defaultLoaders.cssLoader,
-	//         defaultLoaders.fileLoader,
-	//       ],
-	//     },
-	//   ]
-	//   return config
-	// },
+	webpack: (config, { defaultLoaders }) => {
+		// config.module.rules = [
+		// 	{
+		// 		oneOf: [
+		// 			{
+		// 				test: /\.json$/,
+		// 				use: [{ loader: 'json-loader' }],
+		// 			},
+		// 			defaultLoaders.jsLoader,
+		// 			defaultLoaders.cssLoader,
+		// 			defaultLoaders.fileLoader,
+		// 		],
+		// 	},
+		// ];
+		config.node = { fs: 'empty' };
+		return config;
+	},
 };
