@@ -21,10 +21,10 @@ $ npm run start
 - [React Static][2] - Framework for the project
 - [React Apollo][3] - React integration for Apollo Client
 - [Clarifai][4] - AI platform
-- [Hasura][5] - GraphQL Engine
+- [Hasura][5] - GraphQL engine
 - [styled-components][6] - Stylizing React components
 - [Prettier][7] - Linting and formatting
-- [Travis CI][8] - Linting and formatting
+- [Travis CI][8] - Continuous integration
 
 ## Project Reference
 
