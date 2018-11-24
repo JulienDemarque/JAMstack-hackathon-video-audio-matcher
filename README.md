@@ -1,7 +1,8 @@
 # video-audio-matcher [![Build Status](https://travis-ci.com/JulienDemarque/JAMstack-hackathon-video-audio-matcher.svg?branch=master)](https://travis-ci.com/JulienDemarque/JAMstack-hackathon-video-audio-matcher) {
 
 Greetings from Team Haptreyscorwix, and welcome to video-audio-matcher.
-This app allows you to quickly found suitable music for your video. It is using AI image recognition on your video to determine a best fitting musical genre to it. You can then play the song of your choice along your video. Ready to [get started][1]?.
+This app was built by our team for the online JAMstack hackathon 2018 and is the winner of the 1st place and winner of the Clarifai API sponsor!
+This app allows you to quickly found suitable music for your video. It is using AI image recognition on your video to determine a best fitting musical genre to it. You can then play the song of your choice along your video. See a live demo [here][1]?.
 
 ## Build
 
@@ -23,8 +24,8 @@ $ npm run start
 - [Clarifai][4] - AI platform
 - [Hasura][5] - GraphQL Engine
 - [styled-components][6] - Stylizing React components
-- [Prettier][7] - Linting and formatting
-- [Travis CI][8] - Linting and formatting
+- [Prettier][7] - Auto-formatting
+- [Travis CI][8] - Continous Integration
 
 ## Project Reference
 
@@ -32,11 +33,11 @@ $ npm run start
 - [Our Trello][9] - Project management
 - [Our Figma][10] - Basic UI mock-up
 
-	## License
-
+      	## License
 
 The MIT License (MIT)
 Copyright (c) 2018 Team Haptreyscorwix
+
 > :fork_and_knife: Fork away!
 
 # }
